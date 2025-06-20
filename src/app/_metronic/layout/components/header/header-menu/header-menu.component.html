@@ -1,0 +1,63 @@
+<!-- Dashboard -->
+<div class="menu-item me-lg-1">
+  <a class="menu-link py-3" routerLinkActive="active menu-here" routerLink="/dashboard">
+    <span class="menu-title">Dashbaord</span>
+  </a>
+</div>
+<!-- Masters -->
+<div class="menu-item menu-lg-down-accordion me-lg-1 menu-dropdown"
+     data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start">
+  <span class="menu-link py-3" [ngClass]="calculateMenuItemCssClass('/masters')">
+    <span class="menu-title">Masters</span>
+    <span class="menu-arrow d-lg-none"></span>
+  </span>
+  <div class="
+      menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0
+      py-lg-4
+      w-lg-225px
+    " data-kt-menu-dismiss="true" data-popper-placement="bottom-start">
+    <div class="menu-item menu-lg-down-accordion me-lg-1" data-kt-menu-trigger="{default:'click', lg: 'hover'}"
+         data-kt-menu-placement="right-start">
+      <span class="menu-link py-3" [ngClass]="calculateMenuItemCssClass('/masters/colleges')">
+        <span class="menu-icon"><i
+          class="bi fs-3 bi-archive"></i></span>
+        <span class="menu-title">Colleges</span>
+        <span
+          class="menu-arrow"></span>
+      </span>
+      <div class="
+          menu-sub
+          menu-sub-lg-down-accordion
+          menu-sub-lg-dropdown
+          menu-rounded-0
+          py-lg-4
+          w-lg-225px
+        " data-kt-menu-dismiss="true">
+        <div class="menu-item menu-lg-down-accordion me-lg-1" data-kt-menu-trigger="{default:'click', lg: 'hover'}"
+             data-kt-menu-placement="right-start">
+          <span class="menu-link py-3" [ngClass]="calculateMenuItemCssClass('/masters/colleges/lists')">
+            <span class="menu-bullet">
+              <span class="bullet bullet-dot"></span>
+            </span>
+            <span class="menu-title"
+                  data-link="/masters/colleges/lists">
+              List
+            </span>
+          </span>
+        </div>
+        <div class="menu-item menu-lg-down-accordion me-lg-1" data-kt-menu-trigger="{default:'click', lg: 'hover'}"
+             data-kt-menu-placement="right-start">
+          <span class="menu-link py-3" [ngClass]="calculateMenuItemCssClass('/crafted/pages/profile')">
+            <span class="menu-bullet">
+              <span class="bullet bullet-dot"></span>
+            </span>
+            <span class="menu-title"
+                  data-link="/crafted/pages/profile">
+              Cources
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
